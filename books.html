@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Paramythou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+  </head>
+  <body onresize="elements()" onload="elements()">
+    <div style="display:flex;background-color:#077b81;">
+      <div style="width:25%;display:flex;">
+        <img src="logo.png" style="width:93px;height:70%;margin:4% 0% 4% 4%;border-radius:150px;pointer-events: none;">
+        <h1 class="disappear" style="margin:23px 1% 1% 3%;color:#F7BD49;font-family:'Brush Script MT';font-size:4vw;">Paramythou</h1>
+      </div>
+      <div style="width:50%;">
+        <center>
+          <ul class="ul_menu">
+            <li class="li_menu"><a style="color:white;text-decoration:none;" href="index.html">ΑΡΧΙΚΗ</a></li>
+            <li class="li_menu"><a style="color:white;text-decoration:none;" href="books.html">ΠΑΡΑΜΥΘΙΑ</a></li>
+            <li class="li_menu"><a style="color:white;text-decoration:none;" href="aboutme.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
+            <li class="li_menu"><a style="color:white;text-decoration:none;" href="info.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+          </ul>
+        </center>
+      </div>
+    </div>
+    <div class="image">
+    </div>
+    <div class="box">
+      <center>
+        <h2 for="selection" style="font-size:45px;color:white;margin:0% 0% 0% 0%;">Όλα τα Παραμύθια</h2>
+        <div id="selection">
+          <button class="btn active" onclick="filterSelection('all')"> Ολα</button>
+          <button class="btn" onclick="filterSelection('greek')"> Ελληνικά</button>
+          <button class="btn" onclick="filterSelection('english')"> Αγγλικά</button>
+          <button class="btn" onclick="filterSelection('play')"> Δραστηριότητας</button>
+        </div>
+      </center>
+      <div class="box">
+        <br>
+        <div class="contain">
+          <div>
+            <div id="My_First_Words" class="filterDiv greek english">
+              <div class="container">
+                <img style="width:219px;height:260px;margin:0% 0% 0% 0%;" src="num1.jpg">
+                <div class="overlay"><div class="text"><h4>Ένα βιβλίο προσχολικής εκπαίδευσης. Απευθύνεται σε ηλικίες 1-6 ετών.
+                  Περιέχει μικρές κ εύκολες λέξεις για να ξεκινήσει το παιδί να μιλάει στα αγγλικά και ελληνικά.
+                  Εκτυπώστε το βιβλίο για ευκολία στο παιχνίδι με το παιδί</h4></div>
+                  <a href="My_first_words.pdf"><img draggable="false" style="width:20%;margin:0% 0% 0% 0%;" src="download.png"></a>
+                </div>
+              </div>
+              <div>
+                <h2 style="width:200px;margin:auto;color:white;">My First Words</h2>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="Make_My_Own_Story" class="filterDiv colors fruits">
+              <div class="container">
+                <img style="width:219px;height:260px;margin:0% 0% 0% 0%;" src="num2.jpg">
+                <div class="overlay"><div class="text"><h4>Ακολούθησε την αρκούδα κ μάθε τα ζωάκια του δάσους..
+                  Ένα βιβλίο που δεν έχει  κείμενο για να φτιάξεις την ιστορία όπως εσύ επιθυμείς μαζί με το παιδί σου! Ανακάλυψε όλα
+                  τα ζώα που θα συναντήσει η αρκούδα μας! Απευθύνεται σε παιδιά προσχολικής ηλικίας.</h4></div>
+                <a href="Make_my_own_story.pdf" downlaod><img draggable="false" style="width:20%;margin:0% 0% 10% 1%;" src="download.png"></a></div>
+              </div>
+              <div>
+                <center><h2 style="width:200px;margin:auto;color:white;">Make My Own Story</h2></center>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="Little_Things_About_Dinosaurs" class="filterDiv english">
+              <div class="container">
+                <img style="width:219px;height:260px;margin:0% 0% 0% 0%;" src="num3.jpg">
+                <div class="overlay"><div class="text" style="font-size:12px;"><h4>Ένα μικρός δεινόσαυρος μας λέει την ιστορία
+                  του και μας δείχνει το σπίτι του μέσα από μια όμορφη διαδρομή. Τι βιβλίο είναι στα αγγλικά με εύκολο
+                  λεξιλόγιο για ανάγνωση από τα ίδια τα παιδιά που κάνουν τα πρώτα τους βήματα στην αγγλική γλώσσα.</h4></div>
+                <a href="little_things_about_dinosaurs.pdf" download><img draggable="false" style="width:20%;margin:25% 0% 0% 1%;" src="download.png"></a></div>
+              </div>
+              <div>
+                <center><h2 style="width:200px;margin:auto;color:white;">Little Things About Dinosaurs</h2></center>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="Oh_It_Broke" class="filterDiv english">
+              <div class="container">
+                <img style="width:219px;height:260px;margin:0% 0% 0% 0%;" src="num4.jpg">
+                <div class="overlay"><div class="text" style="font-size:12px;"><h4>Η μικρή μας ηρωίδα αρρώστησε και
+                  δεν άκουσε σωστά τους κανόνες που είπε η μαμά της. Ένα ατύχημα όμως της έδωσε να πολύ σημαντικό μάθημα.
+                  Το βιβλίο είναι στα αγγλικά με εύκολο λεξιλόγιο για ανάγνωση από τα ίδια τα παιδιά που κάνουν τα πρώτα τους
+                  βήματα στην αγγλική γλώσσα αλλά και τους γονείς. Το βιβλίο απευθύνεται σε παιδιά από 1-7 ετών</h4></div>
+                <a href="Oh_it_broke.pdf"><img draggable="false" style="width:20%;margin:10% 0% 0% 0%;" src="download.png"></a></div>
+              </div>
+              <div>
+                <center><h2 style="width:200px;margin:auto;color:white;">Oh! It Broke</h2></center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("selection");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
+    function elements(){
+      if(window.innerWidth < 1000){
+        document.getElementById('My_First_Words').style.float = "none";
+        document.getElementById('Make_My_Own_Story').style.float = "none";
+        document.getElementById('Little_Things_About_Dinosaurs').style.float = "none";
+        document.getElementById('Oh_It_Broke').style.float = "none";
+        }
+      else{
+        document.getElementById('My_First_Words').style.float = "left";
+        document.getElementById('Make_My_Own_Story').style.float = "left";
+        document.getElementById('Little_Things_About_Dinosaurs').style.float = "left";
+        document.getElementById('Oh_It_Broke').style.float = "left";
+      }
+    }
+    </script>
+    <br><br><br><br>
+  </body>
+</html>
