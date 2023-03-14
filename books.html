@@ -39,6 +39,35 @@
         <br>
         <div class="contain">
           <div>
+            <div id="Palace_secret" class="filterDiv greek">
+              <div class="container">
+                <img style="width:219px;height:260px;margin:0% 0% 0% 0%;" src="castle.jpg">
+                <div class="overlay"><div class="text" style="font-size:14px;"><h4>Δύο πριγκίπισσες που λατρεύουν να μαγειρεύουν!
+                Ένα ξαφνικό γεγονός μέσα στο εργαστήριο! Και μια κοιλάδα από μονόκερους, πως να δυνδέονται όλα αυτά?
+                Διάβασε την ιστορία και ανακάλυψε το μυστήριο......<br><br> Ηλικίες 2-6 ετών</h4></div>
+                  <a href="Mystery_of_the_Palace.pdf"><img draggable="false" style="width:20%;margin:5% 0% 0% 0%;" src="download.png"></a>
+                </div>
+              </div>
+              <div>
+                <h2 style="width:200px;margin:auto;color:white;">Το Μυστήριο Στο Παλάτι</h2>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="Shapes" class="filterDiv greek play">
+              <div class="container">
+                <img style="width:219px;height:260px;margin:0% 0% 0% 0%;" src="shapes.jpg">
+                <div class="overlay"><div class="text"><h4>Ένα βιβλίο για την πρώτη επαφή με τα σχήματα!
+                Παίξτε με τα σχήματα γνωρίζοντας τους ήρωες της ιστορίας!<br><br> Ηλικίες 1-4 ετών</h4></div>
+                  <a href="Learning_shapes.pdf"><img draggable="false" style="width:20%;margin:22% 0% 0% 0%;" src="download.png"></a>
+                </div>
+              </div>
+              <div>
+                <h2 style="width:200px;margin:auto;color:white;">Ας Μάθουμε Τα Σχήματα</h2>
+              </div>
+            </div>
+          </div>
+          <div>
             <div id="My_First_Words" class="filterDiv greek english">
               <div class="container">
                 <img style="width:219px;height:260px;margin:0% 0% 0% 0%;" src="num1.jpg">
@@ -145,8 +174,12 @@
 
     function elements(){
       if(window.innerWidth < 1000){
+        document.getElementById('Palace_secret').style.float = "none";
+        document.getElementById('Palace_secret').style.margin = "0% 0% 20% 18%";
+        document.getElementById('Shapes').style.float = "none";
+        document.getElementById('Shapes').style.margin = "0% 0% 20% 18%";
         document.getElementById('My_First_Words').style.float = "none";
-        document.getElementById('My_First_Words').style.margin = "0% 0% 10% 18%";
+        document.getElementById('My_First_Words').style.margin = "0% 0% 20% 18%";
         document.getElementById('Make_My_Own_Story').style.float = "none";
         document.getElementById('Make_My_Own_Story').style.margin = "0% 0% 20% 18%";
         document.getElementById('Little_Things_About_Dinosaurs').style.float = "none";
@@ -155,6 +188,10 @@
         document.getElementById('Oh_It_Broke').style.margin = "0% 0% 20% 18%";
         }
       else{
+        document.getElementById('Palace_secret').style.float = "left";
+        document.getElementById('Palace_secret').style.margin = "";
+        document.getElementById('Shapes').style.float = "left";
+        document.getElementById('Shapes').style.margin = "";
         document.getElementById('My_First_Words').style.float = "left";
         document.getElementById('My_First_Words').style.margin = "";
         document.getElementById('Make_My_Own_Story').style.float = "left";
