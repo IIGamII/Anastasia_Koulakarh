@@ -29,7 +29,30 @@
       <center><h1 style="color:white;">Πρόσφατα Παραμύθια</h1></center>
       <br>
       <div class="contain">
-        <div id="My_First_Words_1" style="float:left;width:20%;height:290px;margin:1% 5% 10% 8.2%;text-align:center;">
+        <div id="Palace_secret_1" style="float:left;width:20%;height:290px;margin:1% 5% 10% 8.2%;text-align:center;">
+          <div class="container">
+            <img style="width:299px;margin:0% 0% 0% 0%;height:299px;pointer-events: none;" src="castle.jpg">
+            <div class="overlay" style="width:299px;"><div class="text"><h4>Δύο πριγκίπισσες που λατρεύουν να μαγειρεύουν!
+            Ένα ξαφνικό γεγονός μέσα στο εργαστήριο! Και μια κοιλάδα από μονόκερους, πως να δυνδέονται όλα αυτά?
+            Διάβασε την ιστορία και ανακάλυψε το μυστήριο......<br><br> Ηλικίες 2-6 ετών</h4></div>
+            <a href="Mystery_of_the_Palace.pdf"><img draggable="false" style="width:20%;margin:7% 0% 0% 0%;" src="download.png"></a></div>
+          </div>
+          <div style="">
+            <center><h2 id="Palace_secret_1_text" style="width:200px;margin:auto;color:white;">Το Μυστήριο Στο Παλάτι</h2></center>
+          </div>
+        </div>
+        <div id="Shapes_1" style="float:left;width:20%;height:290px;margin:1% 5% 10% 5%;text-align:center;">
+          <div class="container">
+            <img style="width:299px;margin:0% 0% 0% 0%;height:299px;pointer-events: none;" src="shapes.jpg">
+            <div class="overlay" style="width:299px;"><div class="text"><h4>Ένα βιβλίο για την πρώτη επαφή με τα σχήματα!
+            Παίξτε με τα σχήματα γνωρίζοντας τους ήρωες της ιστορίας!<br><br> Ηλικίες 1-4 ετών</h4></div>
+            <a href="Learning_shapes.pdf"><img draggable="false" style="width:20%;margin:22% 0% 0% 0%;" src="download.png"></a></div>
+          </div>
+          <div style="">
+            <center><h2 id="Shapes_1_text" style="width:200px;margin:auto;color:white;">Ας Μάθουμε Τα Σχήματα</h2></center>
+          </div>
+        </div>
+        <div id="My_First_Words_1" style="float:left;width:20%;height:290px;margin:1% 5% 10% 5%;text-align:center;">
           <div class="container">
             <img style="width:299px;margin:0% 0% 0% 0%;height:299px;pointer-events: none;" src="num1.jpg">
             <div class="overlay" style="width:299px;"><div class="text"><h4>Ένα βιβλίο προσχολικής εκπαίδευσης. Απευθύνεται σε ηλικίες 1-6 ετών.
@@ -41,13 +64,13 @@
             <center><h2 id="My_First_Words_1_text" style="width:200px;margin:auto;color:white;">My First Words</h2></center>
           </div>
         </div>
-        <div id="Make_My_Own_Story_1" style="float:left;width:20%;height:290px;margin:1% 5% 10% 5%;text-align:center;">
+        <div id="Make_My_Own_Story_1" style="float:left;width:20%;height:290px;margin:1% 5% 10% 8.2%;text-align:center;">
           <div class="container">
             <img style="width:299px;margin:0% 0% 0% 0%;height:299px;pointer-events: none;" src="num2.jpg">
             <div class="overlay" style="width:299px;"><div class="text"><h4>Ακολούθησε την αρκούδα κ μάθε τα ζωάκια του δάσους..
               Ένα βιβλίο που δεν έχει  κείμενο για να φτιάξεις την ιστορία όπως εσύ επιθυμείς μαζί με το παιδί σου! Ανακάλυψε όλα
               τα ζώα που θα συναντήσει η αρκούδα μας! Απευθύνεται σε παιδιά προσχολικής ηλικίας.</h4></div>
-            <a href="Make_my_own_story.pdf" downlaod><img draggable="false" style="width:20%;margin:10% 0% 0% 1%;" src="download.png"></a> </div>
+            <a href="Make_my_own_story.pdf" downlaod><img draggable="false" style="width:20%;margin:15% 0% 0% 1%;" src="download.png"></a> </div>
           </div>
           <div class="">
             <center><h2 id="Make_My_Own_Story_1_text" style="width:200px;margin:0% 0% 0% 0%;color:white;">Make My Own Story</h2></center>
@@ -84,6 +107,12 @@
     <script type="text/javascript">
     function elements(){
       if(window.innerWidth < 1500){
+        document.getElementById('Palace_secret_1').style.float = "none";
+        document.getElementById('Palace_secret_1').style.margin = "1% 5% 20% 12%";
+        document.getElementById('Palace_secret_1_text').style.margin = "0% 0% 0% 50%";
+        document.getElementById('Shapes_1').style.float = "none";
+        document.getElementById('Shapes_1').style.margin = "1% 5% 20% 12%";
+        document.getElementById('Shapes_1_text').style.margin = "0% 0% 0% 50%";
         document.getElementById('My_First_Words_1').style.float = "none";
         document.getElementById('My_First_Words_1').style.margin = "1% 5% 20% 12%";
         document.getElementById('My_First_Words_1_text').style.margin = "0% 0% 0% 50%";
@@ -98,17 +127,23 @@
         document.getElementById('Oh_It_Broke_1_text').style.margin = "0% 0% 0% 50%";
         }
       else{
+        document.getElementById('Palace_secret_1').style.float = "left";
+        document.getElementById('Palace_secret_1').style.margin = "1% 5% 10% 8.2%";
+        document.getElementById('Palace_secret_1_text').style.margin = "auto";
+        document.getElementById('Shapes_1').style.float = "left";
+        document.getElementById('Shapes_1').style.margin = "1% 5% 10% 5%";
+        document.getElementById('Shapes_1_text').style.margin = "auto";
         document.getElementById('My_First_Words_1').style.float = "left";
-        document.getElementById('My_First_Words_1').style.margin = "1% 5% 10% 8.2%";
+        document.getElementById('My_First_Words_1').style.margin = "1% 5% 10% 5%";
         document.getElementById('My_First_Words_1_text').style.margin = "auto";
         document.getElementById('Make_My_Own_Story_1').style.float = "left";
-        document.getElementById('Make_My_Own_Story_1').style.margin = "1% 5% 10% 5%";
+        document.getElementById('Make_My_Own_Story_1').style.margin = "1% 5% 10% 8.2%";
         document.getElementById('Make_My_Own_Story_1_text').style.margin = "auto";
         document.getElementById('Little_Things_About_Dinosaurs_1').style.float = "left";
         document.getElementById('Little_Things_About_Dinosaurs_1').style.margin = "1% 5% 10% 5%";
         document.getElementById('Little_Things_About_Dinosaurs_1_text').style.margin = "auto";
         document.getElementById('Oh_It_Broke_1').style.float = "left";
-        document.getElementById('Oh_It_Broke_1').style.margin = "1% 5% 10% 8.1%";
+        document.getElementById('Oh_It_Broke_1').style.margin = "1% 5% 10% 5%";
         document.getElementById('Oh_It_Broke_1_text').style.margin = "auto";
       }
     }
