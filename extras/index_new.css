@@ -158,6 +158,7 @@ a {
   font-size: 96px;
   align-content: center;
   position: relative;
+  vertical-align: middle;
 }
 
 .banner {
