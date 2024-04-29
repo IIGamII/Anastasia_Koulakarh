@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Paramythou</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0">
+    <link href="extras/info_new.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="custom_bars" style="box-shadow: 0 2px 0 #FFAA00;"></div>
+      <div class="banner" style="background-image: url(images/862234-top-teal-wallpapers-2560x1440-for-full-hd.jpg);">
+        <img class="header_image" draggable="false" src="images/logo.png" width="143" height="143">
+        <span class="header_text">Paramythou</span>
+      </div>
+      <div class="custom_bars" style="box-shadow: 0 -2px 0 #FFAA00;"></div>
+      <div>
+        <div class="shape">
+          <center>
+            <ul class="ul_menu">
+              <li class="li_menu"><a style="text-decoration:none;" href="index.html">ΑΡΧΙΚΗ</a></li>
+              <li class="li_menu"><a style="text-decoration:none;" href="books_new.html">ΠΑΡΑΜΥΘΙΑ</a></li>
+              <li class="li_menu"><a style="text-decoration:none;" href="aboutme_new.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
+              <li class="li_menu_pressed"><a style="text-decoration:none;" >ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            </ul>
+          </center>
+        </div>
+        <div class="image" style="background-image: url(images/wallpaper.jpg);"></div>
+      </div>
+      <div class="custom_bars" style="box-shadow: 0 2px 0 #FFAA00;"></div>
+      <div class="second_banner" style="background-image: url(images/862234-top-teal-wallpapers-2560x1440-for-full-hd.jpg);">
+        <br><br>
+        <center><span class="second_header_text" style="color:#F7BD49;">ΕΠΙΚΟΙΝΩΝΙΑ</span></center>
+        <br><br>
+        <div class="custom_bars_2" style="box-shadow: 0 -2px 0 #FFAA00;"></div>
+      </div>
+    <div class="box" style="background-repeat:no-repeat;background-size:100%;background-position:0% 60%;padding: 5% 0% 2% 0%;">
+      <div class="social" >
+        <div class="wrapper">
+          <a>
+            <div class="cont cont--twitter">
+              <div class="bo bo--middle">
+                <i class="ion ion-social-twitter"><img src="images/kisspng-computer-icons-email-clip-art-portable-network-gra-front-office-staff-colorado-eagles-5ca5a147b9e170.7424716415543585997614.png" style="width: 50%; height: 50%;"></i>
+                <span class="count">
+                  Email
+                </span>
+              </div>
+              <span class="follow follow--middle" style="text-transform: none;font-size: 16px;">
+                K.anastasia@outlook.com.gr
+              </span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/paramuthou4/"  style="float: left;">
+            <div class="cont cont--instagram">
+              <div class="bo bo--right">
+                <i class="ion ion-social-instagram"><img src="images/transparent-instagram-logo-instagram-logo-in-circle-with-bold-design65ffae845b0b03.31711345.png" style="width: 50%; height: 50%;"></i>
+                <span class="count">
+                  Instagram
+                </span>
+              </div>
+              <span class="follow follow--right">
+                Follow
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <script>
+      var button = document.querySelector("#stop");
+      var shouldKeepAnimating = true;
+      var addClassTimeouts = [];
+      var containers = document.querySelectorAll(".cont");
+      containers = Array.prototype.slice.call(containers, 0);
+
+      setTimeout(setActiveClasses, 500);
+      
+      button.addEventListener("click", function () {
+        shouldKeepAnimating = !shouldKeepAnimating;
+        if (shouldKeepAnimating) {
+          this.textContent = "Stop";
+          setActiveClasses();
+        }
+        else {
+          this.textContent = "Start";
+          addClassTimeouts.forEach(function (timeout) {
+            clearTimeout(timeout);
+          });
+        clearActiveClasses();
+        }
+      });
+
+      function setActiveClasses() {
+        var time = 0;
+        if (!shouldKeepAnimating) {
+          return;
+        }
+
+        addClassTimeouts = [];
+      
+        containers.forEach(function (container) {
+          time += 1000;
+          var timeoutId = setTimeout(function () {
+            container.classList.add("active");
+          }, time);
+        addClassTimeouts.push(timeoutId);
+        });
+
+        setTimeout(function () {
+          clearActiveClasses();
+          setTimeout(setActiveClasses, 2000);
+        }, time + 2000);
+      }
+
+      function clearActiveClasses() {
+        containers.forEach(function (container) {
+          container.classList.remove("active");
+        });
+      }
+    </script>
+    </body>
+</html>
