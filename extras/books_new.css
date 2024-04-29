@@ -164,7 +164,9 @@ a {
   font-size: 96px;
   align-content: center;
   position: relative;
+  display: inline-block;
   vertical-align: middle;
+  line-height: normal;
 }
 
 .banner {
